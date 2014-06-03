@@ -8,7 +8,13 @@ In a mobile app, use of local storage is important for a better user experience.
 
 For now, we are simply going to write the dummy tweets that we created in the previous lesson into a local cache file, read from it & show it to the user when the Tweet List screen loads. In subsequent lesson, we are going to move the writing tweets part to an asynchronous process using AsyncTask. 
 
-1. <%= link_to "Serializing & writing tweets to local file", app_tutorial_lesson_with_token_path(@app_name, AppLesson.find_by_number(@current_lesson.number + 1).lesson.token) %>
-
-2. <%= link_to "Reading from local file & showing the tweets", app_tutorial_lesson_with_token_path(@app_name, AppLesson.find_by_number(@current_lesson.number + 2).lesson.token) %>
-
+<div>
+<% lessons_of_mod_4 = AppLesson.find_all_by_module_number(4) %>
+<% count = 1 %>
+<% lessons_of_mod_4.each do |l| %>
+	<%= count %> .
+	<% count = count + 1 %>
+	<%= link_to l.lesson.title, app_tutorial_lesson_with_token_path(@app_name, l.lesson_module.lesson.token, l.lesson.token) %>
+		<br/>
+	<% end %>
+</div>
