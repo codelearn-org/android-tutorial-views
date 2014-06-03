@@ -6,6 +6,13 @@ In this module, we will add the feature - each tweet item should have different 
 
 > In this module, you will going to learn how to access & modify data in a ListView & best practices of storing data using models in Java/Android. 
 
-1. <%= link_to "Create Tweet model", app_tutorial_lesson_with_token_path(@app_name, AppLesson.find_by_number(@current_lesson.number + 1).lesson.token) %> - A quick intro on how data models are created in Java & why we need it for our case followed by assignment to actually create it. 
-
-2. <%= link_to "Populate the Tweet model & use it in the Activity", app_tutorial_lesson_with_token_path(@app_name, AppLesson.find_by_number(@current_lesson.number + 2).lesson.token) %> - Once the model is created, it is populated & the data with dummy data & the data is shown on the TweetListActivity. 
+<div>
+<% lessons_of_mod_3 = AppLesson.find_all_by_module_number(3) %>
+<% count = 1 %>
+<% lessons_of_mod_3.each do |l| %>
+	<%= count %> .
+	<% count = count + 1 %>
+	<%= link_to l.lesson.title, app_tutorial_lesson_with_token_path(@app_name, l.lesson_module.lesson.token, l.lesson.token) %>
+		<br/>
+	<% end %>
+</div>
