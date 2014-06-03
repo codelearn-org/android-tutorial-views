@@ -5,10 +5,14 @@ Reading and writing tweets from/to file are time consuming tasks. These tasks sh
 You can always compensate the delay by showing a loading/spinner but that is a bad app design. It is like blocking the app flow. The code should be written in such a way that blocking the app flow should only happen if the user's next action is dependent on the current action. The choice is personal on the part of programmer too. For example - fetching tweets from network should never be blocking but publishing a tweet can be. The user might or might not want to wait till the tweet is published. If you do not block the app, you should show some kind of notification which will let user come back to the publish tweet screen to publish it again. 
 
 In the last lesson, we were reading & writing the tweets in the same thread. In this lesson, we are going to move the steps of creating new tweets & overwriting the cached file into a separate thread using **AsyncTask**.
-
-1. <%= link_to "AsyncTask intro. Simulate network call through AsyncTask", app_tutorial_lesson_with_token_path(@app_name, AppLesson.find_by_number(@current_lesson.number + 1).lesson.token) %> - This is a quick AsyncTask intro. As an assignment, you are going to use AsyncTask to simulate network call which is supposed to fetch tweets & then overwrite the cache file. 
-
-2. <%= link_to "Showing tweets after network call", app_tutorial_lesson_with_token_path(@app_name, AppLesson.find_by_number(@current_lesson.number + 2).lesson.token) %> - The assignment here is to refactor the code to call the code that renders tweets on the screen after the network call. 
-
-3. <%= link_to "Writing tweets using a new AsyncTask", app_tutorial_lesson_with_token_path(@app_name, AppLesson.find_by_number(@current_lesson.number + 3).lesson.token) %> - The primary purpose of network call is to fetch tweets & show to the user ASAP. It means we can move the task of writing tweets to file into a new AsyncTask. This is what you do in this assignment.
+<div>
+<% lessons_of_mod_5 = AppLesson.find_all_by_module_number(5) %>
+<% count = 1 %>
+<% lessons_of_mod_5.each do |l| %>
+	<%= count %> .
+	<% count = count + 1 %>
+	<%= link_to l.lesson.title, app_tutorial_lesson_with_token_path(@app_name, l.lesson_module.lesson.token, l.lesson.token) %>
+		<br/>
+	<% end %>
+</div>
 
