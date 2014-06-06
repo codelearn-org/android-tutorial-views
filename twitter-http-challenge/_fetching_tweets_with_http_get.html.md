@@ -1,5 +1,7 @@
 ##Fetching tweets using HTTP GET calls and submitting new tweets
 
+> Update: If you were using HttpUrlConnection, our tests will eventually fail because of it. You need to use only DefaultHttpClient or AndroidHttpClient for HTTP calls
+
 This level focuses on fetching tweets using the Codelearn Twitter API and displaying them in list in *TweetListActivity* and updating list to add new tweets when refreshed.
 
 ###API
@@ -101,5 +103,5 @@ Edgar
 3. Add a refresh menu item which upon click should make an HTTP GET call to get new array of tweets and append the new data to list. The refresh should simply call the */tweets* url & append the tweets to the list.
 
 ###Restrictions
-* You must use one of the natively available techniques to perform HTTP operations, like **HttpClient** or **HTTPUrlConnection**. External libraries are not supported.
+* You must only use **AndroidHttpClient** or **DefaultHttpClient** to do network calls as they can only be mocked & tested with Robolectric. Any other library is not supported.
 * For JSON parsing, you can use **GSON** & **Jackson** libraries only
