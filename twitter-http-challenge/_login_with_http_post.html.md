@@ -59,9 +59,8 @@ The API will provide you a token as a JSON response
 * Modify the app to skip showing the login screen when the token is already available in SharedPreference.
 
 ###Restrictions
-* You must make a POST call to **/login**
-* The JSON request object must contain "username" and "password" fields
 * You must use one of the natively available techniques to perform HTTP operations, like **HttpClient** or **HTTPUrlConnection**. External libraries are not supported.
+* For JSON parsing, you can use **GSON** & **Jackson** libraries only
 * The received token must be stored in a SharedPreference file named "codelearn_twitter"
 
 Once you are done, run the app as **Android App Codelearn** & if you got the solution right, you will get a success popup that will take you the next level. All the best.

@@ -100,3 +100,6 @@ Edgar
 
 3. Add a refresh menu item which upon click should make an HTTP GET call to get new array of tweets and append the new data to list. The refresh should simply call the */tweets* url & append the tweets to the list.
 
+###Restrictions
+* You must use one of the natively available techniques to perform HTTP operations, like **HttpClient** or **HTTPUrlConnection**. External libraries are not supported.
+* For JSON parsing, you can use **GSON** & **Jackson** libraries only
