@@ -16,9 +16,9 @@ For using Twitter4J library, you need to register an app at [http://dev.twitter.
 
 1)  Modify MainActivity.java to have only one 'Sign in with Twitter' button . Remove the LinearLayouts containing username & password fields. Hook up the button with Twitter4J so that the user gets redirected to Twitter for authentication.
 
-2) Our tests will not be access the webView & fill in the data. Our tests will be using @DroidChallenge user oAuth token to test your app. We need to mandate that you should store the token details in your app in **codelearn_twitter** SharedPreference with key **key_acc_token** for the token & **key_acc_token_secret** for the secret. We are simply going to write @DroidChallenge token values to these keys in the SharedPreference to test your app on our server.
+2) Our tests will not be able to access the webView & fill in the data once user gets redirected to Twitter. Our tests will be using @DroidChallenge user oAuth token to test your app. We need to mandate that you should store the token details in your app in **codelearn_twitter** SharedPreference with key **key_acc_token** for the token & **key_acc_token_secret** for the secret. We are simply going to write @DroidChallenge token values to these keys in the SharedPreference to test your app on our server.
 
-**P.S. - We will not get your twitter account token details this way & the app will not post as you when run on our server. Just pause & think for a minute if you do not get it.**
+**P.S. - We will not get your twitter account token details this way & the app will not post as you when run on our server. Just pause & think for a minute if you are still in doubt.**
 
 It is a good practice to store these names in TwitterConstants.java
 
@@ -85,6 +85,6 @@ It is a good practice to store these names in TwitterConstants.java
 	</RelativeLayout>
 
   
-  Add the logic to post the tweet on button click.
+  **Add the logic to post the tweet on button click.**
 
-4) Add a menu item on TweetListActivity to take user to ComposeTweetActivity**. Overall, there should only be two menu items - the first for Refresh of tweets, the second one for compose tweet. 
+4) Add a menu item on TweetListActivity to take user to **ComposeTweetActivity**. Overall, there should only be two menu items - the first for Refresh of tweets, the second one for compose tweet. 
