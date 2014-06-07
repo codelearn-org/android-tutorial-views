@@ -37,9 +37,11 @@ It is a good practice to store these names in TwitterConstants.java
 	editor.putString(TwitterConstants.PREF_KEY_TOKEN, accessToken.getToken());
 	editor.putString(TwitterConstants.PREF_KEY_SECRET, accessToken.getTokenSecret());
 
-2) Once the user gets authenticated with Twitter, he should automatically go to TweetListActivity where he can see his tweets. Modify the logic so that **only new tweets are fetched & appended to the tweet list**.
+2) Once the user gets authenticated with Twitter, he should automatically go to TweetListActivity where he can see his tweets. The code that fires the Intent is already there. **You should update it to use the SharedPreference keys for the token.** Make sure you do not use any other SharedPreference keys as our tests will not be able to complete the login process because of the webView handling & any other keys that you are setting, will not get set. 
 
-3) Create a new Activity **ComposeTweetActivity** to compose a tweet. Make sure to keep the name exactly the same, also the Activity should extend normal Activity & not ActionBarActivity. A corresponding layout file **activity_compose_tweet.xml** will get generated. Replace the content of the file with the content below
+3) Modify the logic so that **only new tweets are fetched & appended to the tweet list**.
+
+4) Create a new Activity **ComposeTweetActivity** to compose a tweet. Make sure to keep the name exactly the same, also the Activity should extend normal Activity & not ActionBarActivity. A corresponding layout file **activity_compose_tweet.xml** will get generated. Replace the content of the file with the content below
 
 
 	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -87,4 +89,4 @@ It is a good practice to store these names in TwitterConstants.java
   
   **Add the logic to post the tweet on button click.**
 
-4) Add a menu item on TweetListActivity to take user to **ComposeTweetActivity**. Overall, there should only be two menu items - the first for Refresh of tweets, the second one for compose tweet. 
+5) Add a menu item on TweetListActivity to take user to **ComposeTweetActivity**. Overall, there should only be two menu items - the first for Refresh of tweets, the second one for compose tweet. 
