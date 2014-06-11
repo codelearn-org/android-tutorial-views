@@ -1,67 +1,80 @@
-# Using Tweet Model in ListView
+# Creating Tweet Model
 
-In the previous lesson, we created a Tweet Model. In this lesson, we are going to populate it with dummy data & then use its content to show up on TweetListActivity. 
+##Recap from module 1
 
-## Step 1 - Array of tweets initialization 
+In module 1, each tweet item had dummy data and its appearance was based on row_tweet.xml. We also created a TweetListAdapter with a `getView()` method which simply inflated the resource xml
 
-We will be holding a lot of tweets at a given time. So we need an array of Tweet model objects. 
+`TweetAdapter.java`
 
-	List<Tweet> tweets = new ArrayList<Tweet>();
+	public class TweetAdapter extends ArrayAdapter {
+		.
+		.     
+		 @Override
+		 public View getView(int position, View convertView, ViewGroup parent){
+			 return inflater.inflate(R.layout.row_tweet, parent, false);
+		 }
 
-While `List` is a generic array class in java (also called interface), `ArrayList` is simply an array implementation of List interface. Putting a `<Tweet>` typecasts it to an array of our Tweet class.
-
-## Step 2 - Populating the array 
-
-Presently, we create random data inside getView() when the user visits the TweetListActivity. Since we've created a new Tweet model, we will iterate over the Tweet objects, get each element's value like header, date, body etc & set the appropriate field in the inflated View. 
-
-We don't have any tweets yet, so `tweets` will be empty. You can populate it with the code snippet below.
-
-    for ( int i = 0; i < 20; i++ ) {
-		Tweet tweet = new Tweet();
-		tweet.setTitle("A nice header for Tweet # " +i);
-		tweet.setBody("Some random body text for the tweet # " +i);
-		tweets.add(tweet);
 	}
 
-The code above will put 20 Tweet objects in `tweets` array. We are using **setTitle()** and **setBody()** functions that we created in Tweet model in the previous lesson.
+Because of the above step, all tweet items looked the same. In real life, each tweet item will hold a different value that comes from the twitter server. Since we are not doing network calls yet, we will populate some dummy but different data. 
 
-## Step 3 - Populating ListView with tweets array
+The steps we are going to follow :-
 
-Now that we have populated the tweets array, we need to show the data it holds on the ListView. 
+**1. New Tweet model to hold data ** 
 
-A quick recap. Data is passed to the ListView through an Adapter. We had the below code in TweetListActivity.java .
+Good programming practice in Java mandates that any kind of data should be held in a Class. It is also referred as Model of Model View Controller architecture. Consider the Activity classes as Controllers & XML as Views. We will create a new class Tweet.java which will hold the tweet data.
 
-<pre>tweetItemArrayAdapter = new TweetAdapter(this, new String[10]);</pre>
+**2. Populating the Tweet model **
 
-We were not actually passing any data to the Adapter. Just the size of the String array is used by the Adapter to create 10 tweet entries. Now we will be passing `tweets` array to TweetAdapter which will in-turn be used in getView() method to set the title, body & date in inflated View.
+In a real Twitter app, data would be fetched from the network. Since we are not doing network call here, we are just going to put some dummy data in our Tweet model. 
 
-We also need to modify **getView()** method to use the tweets array. The method `getView()` returns an object of type View. Before returning the View, the content of the inflated View can be modified by accessing elements of the View using `findViewById()` method and setting the text using `setText(..)`. 
+**3. Using Tweet model to show data on screen **
 
+We are then going to pass the tweet model array to TweetAdapter & change the code to use the model data to show on the screen. 
 
-### Assignment
+## Creating Tweet Model
 
-**step 1 ** 
-Implement step 1 to instantiate array of tweets. You should have it as private class member in TweetListActivity as you would be needing the variable across the functions of class TweetListActivity. 
-
-Make sure you add the appropriate import statement
-
-     import org.codelearn.twitter.models.Tweet 
-
-in TweetListActivity.java. Otherwise, Eclipse will not be able to understand that 'Tweet' actually stands for the Tweet class defined elsewhere.
-
-**step 2 **
-Initialize tweets array with dummy data as in step 2. Figure out the right place you should be initializing it.
+When we will do network calls to fetch tweets, all the tweets will have uniform structure. Each tweet will have an image, twitter handle, body, date etc. In Java, it is a good practice to create a Java class for this. Such an object is also known as **P**lain **O**ld **J**ava **O**bject (POJO) in Java. We can store multiple tweets as array of the Tweet object.
 
 
-**step 3**
-Make tweets array created from step 2 accessible inside TweetAdapter's getView() function . 
+### Assignment - create Tweet model
 
-Hint 1 - You should pass the array while initializing TweetAdapter in TweetListActivity. The variable becomes available inside constructor of TweetAdapter which you should store locally in TweetAdapter to be used in getView(..)
+** 1. Create Tweet.java **
 
-Hint 2 - TweetAdapter need to extend `ArrayAdapter<Tweet>` to be able to accept array of tweets as argument in the constructor.
+The file needs to be in src -> org -> codelearn -> twitter -> models directory. You can either manually create it or follow the Eclipse steps below.
 
-Hint 3 - Inside getView(..), you should use `position` variable to get the appropriate Tweet object from the tweeets array
+* Create new folder
 
-Once done, the app will look as below
+<div class="row-fluid">
+	<div class="span6">
+		<%= image_tag "twitter-client/new-folder-src.png" %>
+	</div>
+	<div class="span6">
+		<%= image_tag "twitter-client/create-folder-src.png" %>
+	</div>
+</div>
 
-<%= image_tag "twitter-client/different-tweets.png" %>
+* Create Tweet.java inside org.codelearn.twitter.models
+
+<div class="row-fluid">
+	<div class="span6">
+		<%= image_tag "twitter-client/new-class-folder-src.png" %>
+	</div>
+	<div class="span6">
+		<%= image_tag "twitter-client/create-class-folder-src.png" %>
+	</div>
+</div>
+
+* This is how the newly created Tweet.java will look
+
+<%= image_tag "twitter-client/tweet.java.png" %>
+
+**2. Create Tweet.java PoJo **
+
+If you do not know what PoJos are, read about it [here](http://stackoverflow.com/questions/11722251/what-is-pojo-dojo-in-java)
+
+For now, we are just going to have **id** (String), **title** (String) & **body** (String) fields in the Tweet model. You need to create a PoJo that lets you retrieve & set these fields. 
+
+Create `getTitle()`, `setTitle()`, `getBody()`, `setBody()` & `getId()` functions in the PoJo that will get/set the appropriate fields. 
+
+You should run your app & we are going to test if Tweet.java is present at org.codelearn.twitter.models & has appropriate functions & fields. **Make sure you keep the name of the file, location & fields exactly same as specified.**

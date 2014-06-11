@@ -21,12 +21,8 @@ A good way to start is by building the app skeleton (just the user interface).
 <%= image_tag "twitter-client/twitter-details-screenshot.png", alt: "Twitter Detail Screenshot", title: "Twitter Detail Screenshot" %>
 <p class="ac">Twitter Detail Screenshot</p>
 <br/>
-Here are the lessons of this module <br/>
-	<% lessons_of_mod_1 = AppLesson.find_all_by_module_number(1) %>
-	<% count = 1 %>
-	<% lessons_of_mod_1.each do |l| %>
-		<%= count %> .
-		<% count = count + 1 %>
-		<%= link_to l.lesson.title, app_tutorial_lesson_with_token_path(@app_name, l.lesson_module.lesson.token, l.lesson.token) %>
-		<br/>
-	<% end %>
+
+
+In this module, you will be building the very basic User Interface (in short UI) of the login screen.
+
+> You will learn about using RelativeLayout, LinearLayout, EditText, TextView, various attributes of these XML elements & how you can twreak them to reach desired result in the view.

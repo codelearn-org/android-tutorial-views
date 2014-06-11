@@ -6,13 +6,4 @@ We are introducing data handling in this module. The network calls will be intro
 
 <div class="alert alert-warning"><b>Warning</b>: It is never a good idea to store passwords locally, plaintext or otherwise. But for the sake of this module, we overlook best practices to get a better understanding of SharedPreferences</div>
 <div>
-<% count = 1 %>
-<% lessons_of_mod_2 = AppLesson.find_all_by_module_number(2) %> 
 
-<% lessons_of_mod_2.each do |l| %>
-	<%= count %> .
-	<% count = count + 1 %>
-	<%= link_to l.lesson.title, app_tutorial_lesson_with_token_path(@app_name, l.lesson_module.lesson.token, l.lesson.token) %>
-	<br/>
-<% end %>
-</div>
