@@ -1,4 +1,3 @@
-# Loading TweetList Screen from Login Screen through Intent
 
 In the last module, you implemented **Click Listener** on login page button which simply updated the button text. In this module, you will learn how you can load a new Activity on the button click using **Intents**.
 

@@ -1,4 +1,3 @@
-# Adding Listener to Login Button 
 
 So far, we just have the interface of the login screen. As per plan, we will simply move to the next Activity when Login button is pressed. We will not capture any login information for now. Once we are done with our first iteration, we will revisit the Login Activity & add capturing of login information & validation of the user. 
 

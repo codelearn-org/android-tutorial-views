@@ -1,4 +1,3 @@
-# Tweet Detail Activity Screen
 
 In the previous lesson, we implemented click listener for each tweet. Ideally, clicking on a tweet should show the tweet detail screen. In this lesson, we will be creating new Activity TweetDetailActivity & show the Activity on click of tweet item through intent. 
 

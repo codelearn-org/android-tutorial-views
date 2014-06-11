@@ -1,4 +1,3 @@
-# Hooking up Login to 'No Tweet Found' Activity
 
 We created a login button listener which simply updated the button label to 'I am Clicked' from 'Login'. Ideally, post login, the user should be able to see the tweets. We need to create a new Activity for that. Let us just create an empty Activity which showed 'No Tweets found'. 
 

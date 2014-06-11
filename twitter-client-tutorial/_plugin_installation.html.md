@@ -1,4 +1,3 @@
-# Setup Virtual Assistant in 5 minutes
 
 To assist you better during the development cycle, we have created an Eclipse plugin that tests your app at every step to ensure you are doing it right. Our intent is to be able to show you very relevant error messages (& possible solution).
 

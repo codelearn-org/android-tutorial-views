@@ -1,4 +1,3 @@
-# Dynamic Data for Tweet List Screen
 
 We are done storing login data from previous lessons. It is time to handle data for Tweet List Screen. 
 

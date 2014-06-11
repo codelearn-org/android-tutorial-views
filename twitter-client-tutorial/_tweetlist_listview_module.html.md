@@ -1,4 +1,3 @@
-# Implementing TweetList screen using ListView
 
 So far, you learnt to work with relatively simple View elements like LinearLayout, RelativeLayout, TextView, EditText & Button. For building the list of tweet screen, we would be needing a different View element called **ListView**.
 

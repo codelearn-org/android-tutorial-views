@@ -1,4 +1,3 @@
-# Login Screen Layout
 
 So far, we already have a hello world application. In the earlier lesson, we have seen how the control starts from the `onCreate` method of the **MainActivity.java** file and how it renders the layout defined in **activity_main.xml** . 
 

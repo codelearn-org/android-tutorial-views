@@ -1,4 +1,3 @@
-# Hooking Custom Layout to Tweet List View
 
 In the last lesson, we created a custom layout for a Tweet but our Tweet List will still show up as a basic list with one entry per line.
 

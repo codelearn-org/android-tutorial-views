@@ -1,4 +1,3 @@
-# Styling Login Screen Elements
 
 So far we have focussed on positioning the elements but ignored the width & height of the elements. We will address those issues in this lesson.
 

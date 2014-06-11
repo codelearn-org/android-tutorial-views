@@ -1,4 +1,3 @@
-# Adding Username label & input field
 
 In the previous lesson, we got the header in place. In this lesson, we will add the input fields namely username & password. 
 

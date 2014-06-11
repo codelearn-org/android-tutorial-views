@@ -1,4 +1,3 @@
-# Passing data over Intent to Tweet Detail Screen
 
 Each tweet item shows different tweet data. But clicking on a tweet item still shows the same old **activity_tweet_detail.xml** with the data hardcoded in the XML. 
 

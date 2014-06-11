@@ -1,4 +1,3 @@
-# Creating Tweet Model
 
 ##Recap from module 1
 

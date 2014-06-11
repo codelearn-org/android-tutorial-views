@@ -1,4 +1,3 @@
-# Moving writing of tweets to new AsyncTask
 
 As mentioned earlier, reading & writing from files are slightly elaborate tasks & should be done in a separate thread to avoid affecting the main Activity flow. 
 

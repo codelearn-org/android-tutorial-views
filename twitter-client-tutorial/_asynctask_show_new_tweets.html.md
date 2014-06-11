@@ -1,4 +1,3 @@
-# Show tweets after AsyncTask
 
 The AsyncTask we created in previous lesson is simply simulating a network call to fetch new tweets. In case of an actual network call, new tweets will be fetched and we should update the tweet list screen to show them.
 

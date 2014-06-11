@@ -1,4 +1,3 @@
-# Custom Layout for individual tweet
 
 In the last lesson, we learnt how to show a basic ListView with one line data. We need the tweet list to look like the image below 
 

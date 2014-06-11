@@ -1,4 +1,3 @@
-# Twitter Data Handling & Local Storage
 
 We have built a Twitter app with three screens so far. It is just the User Interface. As we mentioned earlier, the first step of app development is to design the interface. We could add more screens, but let's just stick to the three screens - Login, Tweet List & Tweet Detail - that we have built & focus on handling data, storing it locally & updating it as & when needed. 
 

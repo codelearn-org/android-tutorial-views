@@ -1,4 +1,3 @@
-# Reading tweets from local file
 
 There are only three lines that are different while reading from a local file as against writing. 
 

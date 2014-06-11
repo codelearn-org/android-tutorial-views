@@ -1,4 +1,3 @@
-# Fetching/Writing tweets from/to local files
 
 Now that we know how to show dynamic list of tweets, we are now going to go to the next level of storing the tweets in a local file & showing tweets from it.
 

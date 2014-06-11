@@ -1,4 +1,3 @@
-# Layout for Tweet
 
 In last lesson, we learnt how to show up a ListView with dummy data. We need the tweet list to look like as below 
 

@@ -1,4 +1,3 @@
-# Hello World
 
 If you have not setup our Virtual Assistant so far, kindly click the *Go to setup* button on the right. In the setup steps, you would be created a new **CodelearnTwitterApp** which has an Android Hello World app running. The app is similar to the default Android Hello World app that would create from Android ADT. Let's understand the Android app control flow a bit. We have created a screencast for you to help you understand the flow faster.
 

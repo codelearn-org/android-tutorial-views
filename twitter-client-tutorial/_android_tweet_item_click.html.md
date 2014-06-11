@@ -1,4 +1,3 @@
-# Click Listener for individual tweet item
 
 In the previous lesson, we integrated the custom layout row_tweet.xml with the ListView. The next step is to view each tweet in detail when the tweet item is clicked. For the detail screen, we will need a new Activity. We'll do that in a subsequent lesson. In this lesson, we'll see how to enable & capture click event for each item in a ListView. 
 
