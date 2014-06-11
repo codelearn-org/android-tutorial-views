@@ -366,21 +366,3 @@ You can specify width and height with exact measurements, though you probably wo
 * match_parent (referred as fill_parent in API Level 8 and lower) tells your view to become as big as its parent view group will allow.
 
 In general, specifying a layout width and height using absolute units such as pixels is not recommended. Instead, using relative measurements such as density-independent pixel units (dp), wrap_content, or fill_parent, is a better approach, because it helps ensure that your application will display properly across a variety of device screen sizes.
-
-<br/>
-<div>
-Great ! Now that you know about Layouts, you can proceed to attempt Codelearn's Twitter App Tutorial
-</div>
-<br/>
-<div>
-<%= link_to app_tutorial_get_started_path("twitter"), :id => "layoutbtn", :class => "btn btn-small btn-danger" do %>
-<h6>Learn to build a Twitter app<br/><small style="font-size:small; color:inherit"></small></h6>
-<% end %>
-</div>
-
-
-
-<script type="text/javascript">
-mixpanel.track_links("#layoutbtn", "layoutconceptlsn");
-mixpanel.track("layoutsConceptLesson");
-</script>

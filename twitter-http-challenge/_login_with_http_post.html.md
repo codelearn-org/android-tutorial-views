@@ -1,5 +1,7 @@
 ## The app so far
 
+> Update: If you were using HttpUrlConnection, our tests will eventually fail because of it. You need to use only DefaultHttpClient or AndroidHttpClient for HTTP calls
+
 If you have completed the setup, you should have a dummy Twitter app, **CodelearnTwitterChallenge**, imported in your Eclipse. The app has three screens as shown below
 
 <div class="row-fluid">
@@ -59,9 +61,8 @@ The API will provide you a token as a JSON response
 * Modify the app to skip showing the login screen when the token is already available in SharedPreference.
 
 ###Restrictions
-* You must make a POST call to **/login**
-* The JSON request object must contain "username" and "password" fields
-* You must use one of the natively available techniques to perform HTTP operations, like **HttpClient** or **HTTPUrlConnection**. External libraries are not supported.
+* You must use either **AndroidHttpClient** or **DefaultHttpClient** library to do network call. Any other libraries are not supported.
+* For JSON parsing, you can use **GSON** & **Jackson** libraries only
 * The received token must be stored in a SharedPreference file named "codelearn_twitter"
 
 Once you are done, run the app as **Android App Codelearn** & if you got the solution right, you will get a success popup that will take you the next level. All the best.

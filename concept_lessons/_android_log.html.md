@@ -123,20 +123,4 @@ The save button next to the log level selection button lets you save the logs in
 
 You can launch LogCat from command line with `adb` command or through a remote adb shell. You should probably head over to [offical Android docs on Logcat](http://developer.android.com/tools/debugging/debugging-log.html#startingLogcat) for this.
 
-<br/>
-<div>
-Great ! Now that you have completed this chapter, you can proceed to attempt Codelearn's Twitter App Tutorial
-</div>
-<br/>
-<div>
-<%= link_to app_tutorial_get_started_path("twitter"), :id => "loggingbtn", :class => "btn btn-small btn-danger" do %>
-<h6>Learn to build a Twitter app<br/><small style="font-size:small; color:inherit"></small></h6>
-<% end %>
-</div>
 
-
-
-<script type="text/javascript">
-mixpanel.track_links("#loggingbtn", "loggingconceptlsn");
-mixpanel.track("loggingConceptLesson");
-</script>

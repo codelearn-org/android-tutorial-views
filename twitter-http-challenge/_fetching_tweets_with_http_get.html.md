@@ -1,5 +1,7 @@
 ##Fetching tweets using HTTP GET calls and submitting new tweets
 
+> Update: If you were using HttpUrlConnection, our tests will eventually fail because of it. You need to use only DefaultHttpClient or AndroidHttpClient for HTTP calls
+
 This level focuses on fetching tweets using the Codelearn Twitter API and displaying them in list in *TweetListActivity* and updating list to add new tweets when refreshed.
 
 ###API
@@ -55,7 +57,29 @@ Edgar
 
 ## On refresh
 
-On refresh, lets say, you get four new tweets with title Josh, Marcus, John & Warren. **The new tweets should be added on top of existing tweets & in the same order as fetched from network**.
+On refresh, lets say, you get four new tweets with title Josh, Marcus, John & Warren.
+
+<pre>
+[ { "body" : "..",
+    "id" : ..,
+    "title" : "Josh"
+  },
+  { "body" : "..",
+    "id" : ..,
+    "title" : "Marcus"
+  },
+  { "body" : "..",
+    "id" : ..,
+    "title" : "John"
+  },
+  { "body" : "..",
+    "id" : ..,
+    "title" : "Warren"
+  }  
+]
+</pre>
+
+ **The new tweets should be added on top of existing tweets & in the same order as fetched from network**.
 
 `order of tweets on TweetListActivity`
 <pre>
@@ -72,9 +96,10 @@ Edgar
 
 ###Tasks
 
-1. Improve the login process by showing a **RelativeLayout** containing a **ProgressBar** while the login HTTP call is in progress. The RelativeLayout should be added **after Login button** in the same activity, should span height & width of screen & should have a child element ProgressBar. The ProgressBar should show up when the Login data is being sent to the server & should be hidden when the login process completes.
+1. Modify TweetListActivity to make an HTTP GET call when the Activity is created to fetch tweets. Handle the received Tweet objects and render them in the ListView. **Assume that the url always return the new tweets & you should append the tweets to the items in the List**.
 
-2. Modify TweetListActivity to make an HTTP GET call when the Activity is created to fetch tweets. Handle the received Tweet objects and render them in the ListView such that *last tweet fetched should appear first in the list*.
+2. Add a refresh menu item which upon click should make an HTTP GET call to get new array of tweets and append the new data to list. The refresh should simply call the */tweets* url & append the tweets to the list.
 
-3. Add a refresh menu item which upon click should make an HTTP GET call to get new array of tweets and append the new data to list.
-
+###Restrictions
+* You must only use **AndroidHttpClient** or **DefaultHttpClient** to do network calls as they can only be mocked & tested with Robolectric. Any other library is not supported.
+* For JSON parsing, you can use **GSON** & **Jackson** libraries only

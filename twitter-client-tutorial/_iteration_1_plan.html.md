@@ -22,3 +22,7 @@ A good way to start is by building the app skeleton (just the user interface).
 <p class="ac">Twitter Detail Screenshot</p>
 <br/>
 
+
+In this module, you will be building the very basic User Interface (in short UI) of the login screen.
+
+> You will learn about using RelativeLayout, LinearLayout, EditText, TextView, various attributes of these XML elements & how you can twreak them to reach desired result in the view.
