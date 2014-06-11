@@ -154,18 +154,3 @@ Similar to opening webpage we have shareData method in which you can see how we 
 
 In this chapter, we have seen how we can use android intent to communicate between different activities or to pass data. Also, we now know how to use Intents for opening other applications from our app.
 
-<br/>
-<div>
-Great ! Now that you have know about intents, you can proceed to attempt Codelearn's Twitter App Tutorial
-</div>
-<br/>
-<div>
-<%= link_to app_tutorial_get_started_path("twitter"), :id => "intentbtn", :class => "btn btn-small btn-danger" do %>
-<h6>Learn to build a Twitter app<br/><small style="font-size:small; color:inherit"></small></h6>
-<% end %>
-</div>
-
-<script type="text/javascript">
-mixpanel.track_links("#intentbtn", "intentconceptlsn");
-mixpanel.track("intentsConceptLesson");
-</script>

@@ -97,21 +97,3 @@ Now that you have your Android IDE up and running, follow the video integrated a
 Great then ! You can proceed to the next chapter for creating your first hello world application !
 
 > Caution :  For Windows 8 , the installation instruction doesn't change much, but sometimes you might encounter some problem in correctly running the ADT. This is mostly due to incorrect installation of the JDK, make sure you install the correct version of JDK by choose the correct version (32-bit or 64 bit).
-
-<br/>
-<div>
-Great ! Now that you have completed this chapter, you can proceed to attempt Codelearn's Twitter App Tutorial
-</div>
-<br/>
-<div>
-<%= link_to app_tutorial_get_started_path("twitter"), :id => "setupbtn", :class => "btn btn-small btn-danger" do %>
-<h6>Learn to build a Twitter app<br/><small style="font-size:small; color:inherit"></small></h6>
-<% end %>
-</div>
-
-
-
-<script type="text/javascript">
-mixpanel.track_links("#setupbtn", "setupbtnconceptlsn");
-mixpanel.track("setupConceptLesson");
-</script>

@@ -220,20 +220,3 @@ Typically you never access a database directly. Instead Twitter app may be using
 	<%= image_tag "android-introduction/notifications.png" %>
  </div>
 </div>
-<br/>
-<div>
-Great ! Now that you have completed this chapter, you can proceed to attempt Codelearn's Twitter App Tutorial
-</div>
-<br/>
-<div>
-<%= link_to app_tutorial_get_started_path("twitter"), :id => "introbtn", :class => "btn btn-small btn-danger" do %>
-<h6>Learn to build a Twitter app<br/><small style="font-size:small; color:inherit"></small></h6>
-<% end %>
-</div>
-
-
-
-<script type="text/javascript">
-mixpanel.track_links("#introbtn", "introconceptlsn");
-mixpanel.track("introductionConceptLesson");
-</script>

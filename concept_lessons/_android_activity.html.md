@@ -129,19 +129,3 @@ Now once you saw onRestart, just press the back button, this will exit your appl
 
 Summarizing the chapter, you understood why an Activity Lifecycle exists, what is its importance and what are the different Lifecycle states which an activity goes through.
 
-<br/>
-<div>
-Great ! Now that you have learned about Activities, you can proceed to attempt Codelearn's Twitter App Tutorial
-</div>
-<br/>
-<div>
-<%= link_to app_tutorial_get_started_path("twitter"), :id => "activitybtn", :class => "btn btn-small btn-danger" do %>
-<h6>Learn to build a Twitter app<br/><small style="font-size:small; color:inherit"></small></h6>
-<% end %>
-</div>
-
-
-<script type="text/javascript">
-mixpanel.track_links("#activitybtn", "activityconceptlsn");
-mixpanel.track("activityConceptLesson");
-</script>

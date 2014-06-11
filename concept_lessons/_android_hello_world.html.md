@@ -293,19 +293,3 @@ DDMS also comes with a nice tool of emulator control, this option lets you contr
 *	Mock GPS location to test your application if it is using GPS 
 
 In this chapter, we have learned how to create hello world application and how to launch the same using emulator. Also we saw how to create a virtual device. We also got to learn about the android project folder structure and had a glimpse of the tool to assist us in the faster development.
-
-<br/>
-<div>
-Great ! Now that you have completed this chapter, you can proceed to attempt Codelearn's Twitter App Tutorial
-</div>
-<br/>
-<div>
-<%= link_to app_tutorial_get_started_path("twitter"), :id => "helloworldbtn", :class => "btn btn-small btn-danger" do %>
-<h6>Learn to build a Twitter app<br/><small style="font-size:small; color:inherit"></small></h6>
-<% end %>
-</div>
-
-<script type="text/javascript">
-mixpanel.track_links("#helloworldbtn", "helloworldconceptlsn");
-mixpanel.track("helloWorldConceptLesson");
-</script>

@@ -493,19 +493,3 @@ You can view the ListActivity example in the sample project that you downloaded.
 >Watchout: ListActivity works well if you have only single ListView. In case you have more than one Android listview, you need to put extra code for the other ListView to work. 
 
 You can download the sample app from [here](https://github.com/pranayairan/Code-Learn-Android-Example/tree/master/CodeLearnListExample)
-<div>
-Great ! Now that you know about ListView, It's time to see it in Action by trying our App Tutorial
-</div>
-<br/>
-<div>
-<%= link_to app_tutorial_get_started_path("twitter"), :id => "listviewbtn", :class => "btn btn-small btn-danger" do %>
-<h6>Learn to build a Twitter app<br/><small style="font-size:small; color:inherit"></small></h6>
-<% end %>
-</div>
-
-
-
-<script type="text/javascript">
-mixpanel.track_links("#listviewbtn", "listviewconceptlsn");
-mixpanel.track("listViewConceptLesson");
-</script>
