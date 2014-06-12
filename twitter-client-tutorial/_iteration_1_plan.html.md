@@ -1,9 +1,9 @@
 
-The first thing an app developer does before he starts building the app is to plan it. The first step is to create [mockups](http://en.wikipedia.org/wiki/Mockup#Software_Engineering). But since we are replicating an already existing app, we know how it will look. So we can bypass the mockup creation step.
+The first thing an app developer does before he starts building an app is to plan it. The first step is to create [mockups](http://en.wikipedia.org/wiki/Mockup#Software_Engineering). But since we are replicating an already existing app, we know how it will look. So we can bypass the mockup creation step.
 
 A good way to start is by building the app skeleton (just the user interface). 
 
-* The first time you open a Twitter app, it shows the login screen. So we will build the interface for it first.
+* The first time you open a Twitter app, it shows the login screen. So we will build its interface first.
 <br/>
 <%= image_tag "twitter-client/login-screenshot.png", alt: "Login Screenshot", title: "Login Screenshot" %>
 <p class="ac">Login Interface Screenshot</p>

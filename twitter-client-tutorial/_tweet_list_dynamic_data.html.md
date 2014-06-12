@@ -5,13 +5,3 @@ In this module, we will add the feature - each tweet item should have different 
 
 > In this module, you will going to learn how to access & modify data in a ListView & best practices of storing data using models in Java/Android. 
 
-<div>
-<% lessons_of_mod_3 = AppLesson.find_all_by_module_number(3) %>
-<% count = 1 %>
-<% lessons_of_mod_3.each do |l| %>
-	<%= count %> .
-	<% count = count + 1 %>
-	<%= link_to l.lesson.title, app_tutorial_lesson_with_token_path(@app_name, l.lesson_module.lesson.token, l.lesson.token) %>
-		<br/>
-	<% end %>
-</div>
