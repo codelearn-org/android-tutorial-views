@@ -1,4 +1,3 @@
-# Loading Tweet Detail Activity using Intent
 
 So far you have built a basic Tweet List screen. You also learnt how to attach Click Listener to each List item. As per our plan, you need to load a new Activity with details of the tweet when the tweet item is clicked on the ListView. 
 

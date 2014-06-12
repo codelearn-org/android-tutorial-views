@@ -1,4 +1,3 @@
-# Attaching click listener to individual tweets
 
 In previous lesson, we are able to get the kind of layout we designed for the list of tweet screen. Clicking on a tweet item should show the tweet detail in a new Activity. In this lesson, we will put the click listener on each tweet item. 
 

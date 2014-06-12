@@ -1,4 +1,3 @@
-# Using Tweet Model in ListView
 
 In the previous lesson, we created a Tweet Model. In this lesson, we are going to populate it with dummy data & then use its content to show up on TweetListActivity. 
 

@@ -1,4 +1,3 @@
-# Layout for Tweet List - Part 2
 
 In last lesson we added just the ImageView in the row_tweet.xml . We need to add child LinearLayout with its own children. 
 

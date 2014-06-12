@@ -1,4 +1,3 @@
-# Storing login data in Shared Preference
 
 In the real Twitter client, once you log in successfully, you will not see the login screen again. The app sends the username password information to the server, receives an authentication token & stores it locally in the phone. The next time you open the app, it checks for the authentication token & directly takes you to the tweet list screen.
 

@@ -1,4 +1,3 @@
-# Serializing & writing to local file
 
 ** Writing to a local file **
 

@@ -1,4 +1,3 @@
-# Import Codelearn Twitter Challenge Project
 
 In the previous level, we installed Codelearn Eclipse Plugin.
 

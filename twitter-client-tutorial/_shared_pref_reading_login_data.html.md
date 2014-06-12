@@ -1,4 +1,3 @@
-# Reading Login data from the View 
 
 ## Recap from module 1
 

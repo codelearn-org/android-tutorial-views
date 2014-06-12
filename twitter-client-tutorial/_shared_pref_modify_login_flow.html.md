@@ -1,4 +1,3 @@
-# Do not show login screen again
 
 A real twitter app does not show login screen after you have already logged in. On subsequent visits, it directly takes you to the tweet list screen as soon as you open the app.
 

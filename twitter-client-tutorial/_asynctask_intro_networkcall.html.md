@@ -1,4 +1,3 @@
-# AsyncTask intro
 
 AsyncTask class lets us execute things in parallel. It is like spawning a new thread which does things in parallel & exits silently when the tasks are done. It is important not to *block* the main Activity thread. 
 

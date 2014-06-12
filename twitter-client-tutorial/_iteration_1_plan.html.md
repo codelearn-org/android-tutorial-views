@@ -1,4 +1,3 @@
-# Planning the app
 
 The first thing an app developer does before he starts building the app is to plan it. The first step is to create [mockups](http://en.wikipedia.org/wiki/Mockup#Software_Engineering). But since we are replicating an already existing app, we know how it will look. So we can bypass the mockup creation step.
 

@@ -1,4 +1,3 @@
-# Designing List of Tweet Screen
 
 We successfully hooked 'No Tweet Found' screen after the login screen in the previous lesson. In this lesson, we will remove the 'No Tweet Found' message & populate the screen with a dummy tweet list. As usual, we will use some placeholder data to show some dummy list content.
 

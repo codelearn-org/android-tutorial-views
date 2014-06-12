@@ -1,4 +1,3 @@
-# Writing login data to Shared Preference
 
 Shared Preference is a good place to store app-specific data. It is the easiest form of local storage available in an Android app. SharedPreference uses a simple key-value pair format to store and retrieve data. Because it is meant for simple data, SharedPreference does not support storing complex Objects.
 

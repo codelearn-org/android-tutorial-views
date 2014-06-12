@@ -1,4 +1,3 @@
-# Add Password & Login button
 
 In the previous lesson, we added Username label & input field. For the password, we will simply replicate the LinearLayout for the Password label & input field. 
 

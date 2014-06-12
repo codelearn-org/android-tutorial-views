@@ -1,4 +1,3 @@
-# Creating A New Codelearn Twitter Project
 
 In the previous lesson, we installed Codelearn Eclipse Plugin. Instead of following the regular process of creating a New Android project, the plugin comes with a **Codelearn Twitter App** project pre-bundled. **When you create a new Android project, it asks for quite a few parameters which is confusing for a newbie. We have condensed all those steps by providing default values.** 
 

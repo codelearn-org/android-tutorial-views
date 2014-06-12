@@ -1,4 +1,3 @@
-# Implementing Login Button Click Listener
 
 If you have followed our Twitter App tutorial so far, you have built a login screen with some basic Layouts & View elements. You have added a login button but it does nothing. 
 

@@ -1,4 +1,3 @@
-# Reading/Writing tweets with AsyncTask
 
 Reading and writing tweets from/to file are time consuming tasks. These tasks should not be handled in the main thread so as not to give a *hung app* experience to the user.
 
