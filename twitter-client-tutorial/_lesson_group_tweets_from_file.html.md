@@ -7,3 +7,4 @@ In a mobile app, use of local storage is important for a better user experience.
 
 For now, we are simply going to write the dummy tweets that we created in the previous lesson into a local cache file, read from it & show it to the user when the Tweet List screen loads. In subsequent lesson, we are going to move the writing tweets part to an asynchronous process using AsyncTask. 
 
+
