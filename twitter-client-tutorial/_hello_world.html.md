@@ -13,4 +13,4 @@ If you have not setup our Virtual Assistant so far, kindly click the *Go to setu
 
 If you understand the control flow in the Hello World app, here is an assignment for you. 
 
-Change the text of string @hello_world in strings.xml and 'Run' the project in Eclipse with our Virtual Assistant. If you have done it right, you will see a success popup here in the browser & the lesson will be marked complete.
+Change the 'Hello World' text on the screen to 'This is Sparta' (or any other text) as instructed in the screencast. 
