@@ -37,8 +37,6 @@ Download Android SDK from [official Android SDK download page](http://developer.
 		</div>
 		</p>
 		</small>
-	<li>Once a lesson is complete, the <%= link_to "Next >", "#", class: "btn btn-inverse" %> button at the bottom of the lesson gets activated. Also a green bar with <%= link_to "< Prev", "#", class: "btn btn-inverse" %> & <%= link_to "Next >", "#", class: "btn btn-inverse" %> buttons appear on the top of the lesson with a message telling that you have completed the lesson.</li>
-    <p><%= image_tag "twitter-client/green-navigation-bar.png" %></p>
 </ol>
 
 <div class="alert alert-info">More elaborate setup instructions are available in the <b><%= link_to "Android Setup page", android_concept_lesson_path("android-setup") %></b></div>
