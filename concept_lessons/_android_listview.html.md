@@ -133,6 +133,9 @@ If you notice in the above example, we have used Android.R.Layout item. This is 
 * simple_list_item_single_choice : A List Item with a radio button after textView. You can use this when you want to get a choice from the user.
 * simple_list_item_multiple_choice: A List Item with a Check Box after textview. You can use this when you want to get multiple choices from the user. 
 
+<div class="ac">
+ <%= link_to "Go to hands on tutorial on List View", app_tutorial_module_with_token_path("twitter", LessonModule.find_by_lesson_number(43).lesson.token), class: "btn btn-success btn-large" %>
+</div>
 
 ##Custom ListView with BaseAdapter
 
@@ -408,6 +411,9 @@ This is how the ListView will look when you run it:
 
 <%= image_tag "list_view/Custom_Base_adapter.png", alt: "Android Listview Custom Adapter", title: "Custom Adapter" %>
 
+<div class="ac">
+ <%= link_to "Go to hands on tutorial on Custom List View", app_tutorial_module_with_token_path("twitter", LessonModule.find_by_lesson_number(43).lesson.token), class: "btn btn-success btn-large" %>
+</div>
 
 ##ListView Click Listener
 
@@ -444,6 +450,9 @@ This is how our click listener looks like :
 
 Now you get a fair understanding of how ListView works in Android. Let's See Some more tricks which can help you
 
+<div class="ac">
+ <%= link_to "Go to hands on tutorial on List View Click Listener", app_tutorial_module_with_token_path("twitter", LessonModule.find_by_lesson_number(43).lesson.token), class: "btn btn-success btn-large" %>
+</div>
 
 ##ListActivity 
 
@@ -493,3 +502,4 @@ You can view the ListActivity example in the sample project that you downloaded.
 >Watchout: ListActivity works well if you have only single ListView. In case you have more than one Android listview, you need to put extra code for the other ListView to work. 
 
 You can download the sample app from [here](https://github.com/pranayairan/Code-Learn-Android-Example/tree/master/CodeLearnListExample)
+

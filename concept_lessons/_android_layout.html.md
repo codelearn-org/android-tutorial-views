@@ -46,6 +46,7 @@ For any view/viewgroup we need to specify its width & height. If not specified, 
 
 LinearLayout can be used in vertical or horizontal fashion. We can set the orientation of the layout by setting the `android:orientation` attribute.
 
+
 ### Horizontal Orientation
 
 `Horizontal`
@@ -99,6 +100,9 @@ Save the file & deploy your Android app. You will see the screenshot as shown be
 <p class="ac"><b>Linear Layout vertical alignment screenshot</b></p>
 <br/>
 
+<div class="ac">
+ <%= link_to "Go to hands on tutorial on Android UI", app_tutorial_module_with_token_path("twitter", LessonModule.find_by_lesson_number(4).lesson.token), class: "btn btn-success btn-large" %>
+</div>
 
 ## Android Relative Layout
 
@@ -107,6 +111,7 @@ Relative layout is one of the basic layouts available to design UI in Android. I
 
 
 In this layout, you can specify the child layouts w.r.t its sibling or parent. One or more of the following attributes must be set for every view. Otherwise, the views will be rendered one over another in the **top left** region of the RelativeLayout.
+
 
 ### Position relative to container/parent 
 
@@ -126,6 +131,7 @@ To position an element at the horizontal center, **layout_centerHorizontal** is 
 
 Similarly, **layout_centerVertical** positions the element vertically at the center. **layout_centerInParent** is layout_centerVertical & layout_centerHorizontal combined.
 
+
 ### Position relative to sibling
 
 You can position an element relative to another element in the layout. To refer to an element, it must have a unique ID. This can be assigned using the **android:id** attribute. The attribute can be used to reference the child element against which the positioning needs to be done. More about ids are discussed in the later part of this article. 
@@ -133,6 +139,8 @@ You can position an element relative to another element in the layout. To refer 
 **layout_toXXXOf** are the most commonly used attributes for elements in RelativeLayout. XXX can take Left, Right, Start & End. Eg. `android:layout_toLeftOf=@+id/some_element` will position the element to the left of an element with `android:id="@+id/some_element"`.
 
 Apart from it, there is **layout_above & layout_below**. The names are self explanatory. 
+
+
 
 ### Android Relative Layout Example 
 
@@ -190,6 +198,10 @@ The date field '26 Nov 2013' is again a TextView element aligned to the right of
            android:text="26 NOV 2013"
            . 
     	   />
+
+<div class="ac">
+ <%= link_to "Go to hands on tutorial on Android UI", app_tutorial_module_with_token_path("twitter", LessonModule.find_by_lesson_number(4).lesson.token), class: "btn btn-success btn-large" %>
+</div>
 
 ## Choosing between Linear & Relative Layout
 
@@ -314,6 +326,10 @@ This behavior is similar to how HTML table behaves.
 <br/>
 
 
+<div class="ac">
+ <%= link_to "Go to hands on tutorial on Android UI", app_tutorial_module_with_token_path("twitter", LessonModule.find_by_lesson_number(4).lesson.token), class: "btn btn-success btn-large" %>
+</div>
+
 ## Invoking Layout from Activity
 
 In each demo we have created a layout and now let us see how this can be used in the Activity. Images, layout files and other application assets stored in the **res** folder are referred as resources in Android. The Android framework creates a unique id for each resource and this exact id can be used to refer to these resources.
@@ -366,3 +382,4 @@ You can specify width and height with exact measurements, though you probably wo
 * match_parent (referred as fill_parent in API Level 8 and lower) tells your view to become as big as its parent view group will allow.
 
 In general, specifying a layout width and height using absolute units such as pixels is not recommended. Instead, using relative measurements such as density-independent pixel units (dp), wrap_content, or fill_parent, is a better approach, because it helps ensure that your application will display properly across a variety of device screen sizes.
+

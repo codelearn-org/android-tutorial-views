@@ -292,6 +292,9 @@ Add listener
         });
 In the above code, you add a click listener to the button. Whenever the button is clicked , the onclick method of button is called. 
 
+<div class="ac">
+ <%= link_to "Go to hands on tutorial on Click Listener", app_tutorial_module_with_token_path("twitter", LessonModule.find_by_lesson_number(41).lesson.token), class: "btn btn-success btn-large" %>
+</div>
 ###Code
 This is how a button will look in XML code
 
@@ -521,6 +524,10 @@ The ListView is widely used in android applications. A simpler example of list v
 > Listview is a complex UI pattern, and we have a separate section about listview. You can read more about list view in ListView Section
 
 
+<div class="ac">
+ <%= link_to "Go to hands on tutorial on ListView", app_tutorial_module_with_token_path("twitter", LessonModule.find_by_lesson_number(43).lesson.token), class: "btn btn-success btn-large" %>
+</div>
+
 ##GridView
 
 ###What
@@ -633,3 +640,4 @@ This is how our complete scroll view will look
         </ScrollView>
 
 Android has a lot of UI elements which are designed for specific purposes, in this chapter we tried to cover some of the most used UI elements. If you want to read more about other UI controls, you can go to [this link](http://developer.android.com/guide/topics/ui/index.html)
+

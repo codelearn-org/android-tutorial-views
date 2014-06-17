@@ -52,6 +52,9 @@ This is a simple example of an share Android Intent. This is typically used when
 
 Let us now observe a couple of examples to see how Intent works, how you pass data and how you use Implicit Intents to delegate responsibilities to other apps. 
 
+<div class="ac">
+ <%= link_to "Go to hands on tutorial on Intent", app_tutorial_module_with_token_path("twitter", LessonModule.find_by_lesson_number(42).lesson.token), class: "btn btn-success btn-large" %>
+</div>
 
 ##Android Intent Example
 

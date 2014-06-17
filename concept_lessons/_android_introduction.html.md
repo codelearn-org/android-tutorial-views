@@ -32,7 +32,10 @@ This is usually referred to as the launcher Activity or the main Activity too.
 
 * Every Android app has a Manifest.xml where all Activites are defined and one Activity is marked as Main Activity. One of the most common error developers commit when they start with Android development is forgetting to add a new Activity in Mainfest.xml file.
 
-As a developer, Activity is a Java class file where you write the logic. Activity does not include the UI. Rather, one of the things you need to write in your Activity logic is - which UI to show. 
+As a developer, Activity is a Java class file where you write the logic. Activity does not include the UI. Rather, one of the things you need to write in your Activity logic is - which UI to show. <br/>
+<div class="ac">
+ <%= link_to "Go to hands on tutorial on Acitivity", app_tutorial_module_with_token_path("twitter", LessonModule.find_by_lesson_number(4).lesson.token), class: "btn btn-success btn-large" %>
+</div>
 
 ## User Interface / Views
 
@@ -62,7 +65,9 @@ UI is defined as XML. The top XML element is a Layout element . Inside it, there
      </LinearLayout>
 
 You may read more about Layouts & Views in our <%= link_to "Layout Concept Lesson", android_concept_lesson_path("android-layout")  %> & <%= link_to "View Concept Lesson", android_concept_lesson_path("android-views")  %>.
-
+<div class="ac">
+ <%= link_to "Go to hands on tutorial on Android UI", app_tutorial_module_with_token_path("twitter", LessonModule.find_by_lesson_number(4).lesson.token), class: "btn btn-success btn-large" %>
+</div>
 ## Intents
 
 To move from one Activity to another (or one screen to another), on user interaction like click of a button or click of a notification item, Intents are used. It is possible to pass data including whole objects with Intent. Using Intent you can also open another Android application.
@@ -73,6 +78,9 @@ With Activity, Views and Intent; you can create a basic Android app. Lots of app
 
 Let’s look into some of the advanced Android concepts. 
 
+<div class="ac">
+ <%= link_to "Go to hands on tutorial on Intents", app_tutorial_module_with_token_path("twitter", LessonModule.find_by_lesson_number(42).lesson.token), class: "btn btn-success btn-large" %>
+</div>
 ## Services
 
 Have you ever listened to Music on your phone? Have you observed that the music continues to play in the background when you go to the home screen from the Music app or close the app?
