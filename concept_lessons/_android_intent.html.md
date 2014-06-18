@@ -108,6 +108,9 @@ Lets see the example code
 Here we create the bundle object and put our data using various methods like putString, putBoolean etc. 
 
 
+<div class="ac">
+ <%= link_to "Go to hands on tutorial on Passing Data over Intent", app_tutorial_module_with_token_path("twitter", LessonModule.find_by_lesson_number(45).lesson.token), class: "btn btn-success btn-large" %>
+</div>
 
 ###Retrieving Data
 
@@ -130,6 +133,7 @@ Once you get hold of this Intent object, you can call different methods to get t
 
 <br/>
 <%= image_tag "android_intents/intents.png", alt: "Intenets", title: "Implicit Intenets" %>
+
 
 ###Opening Other App
 
