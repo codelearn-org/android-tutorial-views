@@ -1,10 +1,10 @@
 ##Fetching carpools using HTTP GET calls.
 
-This level focuses on fetching carpools using the Codelearn Twitter API and displaying them in list in *CarpoolListActivity* and firing up a new activity *CarpoolDetailActivity* which displays all the carpool data when a carpool item is clicked on the list.
+This level focuses on fetching carpools using the Codelearn Carpool API and displaying them in list in *CarpoolListActivity* and firing up a new activity *CarpoolDetailActivity* which displays all the carpool data when a carpool item is clicked on the list.
 
 ###API
 
-Make an HTTP **GET** request call to fetch tweets using-
+Make an HTTP **GET** request call to fetch carpool using-
 <pre>
 http://codelearn-carpool.herokuapp.com/api/carpools
 </pre>
@@ -50,7 +50,7 @@ http://codelearn-carpool.herokuapp.com/api/carpools
 
 In the JSON response above, the first carpool has location narnia followed by hogwarts, mordor & pandora. It should appear as the order below in CarpoolListScreen 
 
-`order of tweets on CarpoolListActivity`
+`order of carpools on CarpoolListActivity`
 <pre>
 narnia
 hogwarts
