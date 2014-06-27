@@ -1,6 +1,11 @@
 ## Creating and editing a carpool
 Now that we have designed the basic layout for MainActivity we will proceed to design an UI for creating and editing a carpool in **CreateCarpoolActivity**.
-A carpool entity consists of four attributes: phone number, location, start time from home & start time from office.
+A carpool entity consists of four attributes:
+* Phone number: The phone number of the carpool owner.
+* Location: The initial location of the carpool.
+* Start time from home : The departure time from the location.
+* Start time from office : The departure time from the office.
+
 For the UI of *CreateCarpoolActivity*, create a new xml file called **carpool_list.xml** and paste the code into the file shown below.
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"

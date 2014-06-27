@@ -1,5 +1,5 @@
 ## Executing HTTP requests
-In this level, your task is to send different types HTTP requests to the Codelearn Test API and handle the response appropriately.
+In this level, your task is to send different types HTTP requests to the Codelearn Test API and handle the response appropriately. We will be submitting and updating carpool data and deleting a carpool enitity to the API endpoint.
 
 ###Carpool creation API
 The Codelearn LiftApp API endpoint for submitting the carpool data is available at:
