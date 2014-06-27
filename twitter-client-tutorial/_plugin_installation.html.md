@@ -8,7 +8,7 @@ Download Android SDK from [official Android SDK download page](http://developer.
 
 > You need to have the latest Android SDK installed on your computer. Ignore this step if you already have the latest SDK.
 
-<h2> 2. Download Virtual Assistant <small><%= link_to "download link", plugin_getzip_path, target: "_blank", style: "color:#57A3E8", id: "pluginziplink" %></small></h2>
+<h2> 2. Download Virtual Assistant <small><%= link_to "download link", plugin_getzip_path, style: "color:#57A3E8", id: "pluginziplink" %></small></h2>
 <ol style="text-align:left">
 	<p>Its around 4 MB in size, thus very light weight.</p>
 	<li> <strong>Unzip the downloaded dropin-dependencies.zip file</strong>. You will see 4 files inside it.</li>
