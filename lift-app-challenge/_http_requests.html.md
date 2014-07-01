@@ -1,11 +1,11 @@
 ## Executing HTTP requests
-In this level, your task is to send different types HTTP requests to the Codelearn Test API and handle the response appropriately. We will be submitting and updating carpool data and deleting a carpool enitity to the API endpoint.
+In this level, your task is to send different types HTTP requests to the Codelearn Test API and handle the response appropriately. We will be submitting and updating lift data and deleting a lift enitiy using the API endpoint.
 
-###Carpool creation API
-The Codelearn LiftApp API endpoint for submitting the carpool data is available at:
+###Lift creation API
+The Codelearn LiftApp API endpoint for submitting the lift data is available at:
 
 <pre>
-http://codelearn-carpool.herokuapp.com/api/create
+http://codelearn-liftapp.herokuapp.com/api/create
 </pre>
 
 ####Request
@@ -22,8 +22,8 @@ The JSON request object for the HTTP **POST** request can be as follows.
 Note that the field names must be same as the ones given above.
 
 ####Response
-The API will provide you with the carpool id as a JSON response
-Note that this id is unique for each carpool entity stored in the database.
+The API will provide you with the lift id as a JSON response
+Note that this id is unique for each lift entity stored in the database.
 <pre>
 {
 "id" : "_sfdf3rcfht4t553"
@@ -31,14 +31,14 @@ Note that this id is unique for each carpool entity stored in the database.
 </pre>
 
 ==================================================================================
-###Carpool updating API
-For updating the carpool data in the database, a **PUT** request encoded with the carpool id can be sent to the API endpoint as follows:
+###Lift updating API
+For updating the lift data in the database, a **PUT** request encoded with the lift id can be sent to the API endpoint as follows:
 <pre>
-http://codelearn-carpool.herokuapp.com/api/carpool/{{id}}
+http://codelearn-liftapp.herokuapp.com/api/lifts/{{id}}
 </pre>
-Where ``{{id}}`` should be replaced with your carpool id. For example:
+Where ``{{id}}`` should be replaced with your lift id. For example:
 <pre>
-http://codelearn-carpool.herokuapp.com/api/carpool/_sfdf3rcfht4t553
+http://codelearn-liftapp.herokuapp.com/api/lifts/_sfdf3rcfht4t553
 </pre>  
 
 ####Request
@@ -54,22 +54,22 @@ The JSON request object for the HTTP **PUT** request should be similar to the **
 </pre>
 
 ===================================================================================
-###Carpool deletion API
-For deleting a carpool from the database a **DELETE** request encoded with the carpool id could be sent to the API endpoint as follows:
+###Lift deletion API
+For deleting a lift enitiy from the database a **DELETE** request encoded with the lift id could be sent to the API endpoint as follows:
 
 <pre>
-http://codelearn-carpool.herokuapp.com/api/carpool/_sfdf3rcfht4t553
+http://codelearn-liftapp.herokuapp.com/api/lifts/_sfdf3rcfht4t553
 </pre>  
 
 
 ##Tasks
 
-1. Modify the app the send the carpool data to the API endpoint as a HTTP POST call while creating a carpool in the CreateCarpoolActivity.
-2. Once you receive a successful response, store the received id in SharedPreference, specifying the name of the preference file as **codelearn_liftapp** and the name of the preference key as **pref_carpool_id**
-3. For updating the carpool data from the edit/create carpool screen, a HTTP PUT call must be sent to the API endpoint.
-4. Add a menu item to CarpoolListActivity which allows the user to delete the carpool. On clicking the menu item a HTTP DELETE call should be made to the API endpoint.
+1. Modify the app the send the lift data to the API endpoint as a HTTP POST call on creating a lift in the CreateLiftActivity.
+2. Once you receive a successful response, store the received id in SharedPreference, specifying the name of the preference file as **codelearn_liftapp** and the name of the preference key as **pref_lift_id**
+3. For updating the lift data from the edit/create lift screen, a HTTP PUT call must be sent to the API endpoint.
+4. Add a menu item to LiftListActivity which allows the user to delete the lift. On clicking the menu item a HTTP DELETE call should be made to the API endpoint.
 
 ##Restrictions
-1. The carpool data must be stored in a SharedPreference file named "codelearn_liftapp".
+1. The lift id must be stored in a SharedPreference file named "codelearn_liftapp" with preference key, *"pref_lift_id".
 2. You must use only DefaultHttpClient or AndroidHttpClient for HTTP calls
-3. There must be exactly two items i.e edit and delete in the menu of CarpoolListActivity.
+3. There must be exactly two items i.e edit and delete in the menu of LiftListActivity.

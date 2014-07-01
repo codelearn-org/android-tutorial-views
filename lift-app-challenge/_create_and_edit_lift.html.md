@@ -1,12 +1,12 @@
-## Creating and editing a carpool
-Now that we have designed the basic layout for MainActivity we will proceed to design an UI for creating and editing a carpool in **CreateCarpoolActivity**.
-A carpool entity consists of four attributes:
-* Phone number: The phone number of the carpool owner.
-* Location: The initial location of the carpool.
+## Creating and editing a lift
+Now that we have designed the basic layout for MainActivity we will proceed to design an UI for creating and editing a lift in **CreateLiftActivity**.
+A lift entity consists of four attributes:
+* Phone number: The phone number of the car owner.
+* Location: The initial location of the lift.
 * Start time from home : The departure time from the location.
 * Start time from office : The departure time from the office.
 
-For the UI of *CreateCarpoolActivity*, create a new xml file called **carpool_list.xml** and paste the code into the file shown below.
+For the UI of **CreateLiftActivity**, create a new xml file called **activity_create_lift.xml** and paste the code into the file shown below.
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -130,7 +130,7 @@ For the UI of *CreateCarpoolActivity*, create a new xml file called **carpool_li
                 android:background="#666666" />
 
             <Button
-                android:id="@+id/carpool_submit"
+                android:id="@+id/lift_submit"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -144,11 +144,11 @@ You should now have a layout looking like this:
 
 ##Tasks
 
-1. Make MainActivity a one time post-install activty. When the user opens the app for the second time the MainActivity should be skipped to the CarpoolListActivity.
-2. In CreateCarpoolActivity, store carpool details entered by the user in SharedPreference. We need to mandate that you should store the token details in your app in **codelearn_liftapp** SharedPreference with keys **key_pref_phone** for the phone number, **key_pref_location** for the location, **key_pref_stime** for the start time from home & **key_pref_etime** for the start time from office.
-3. Add a menu item to CarpoolListActivity which allows the user to edit/create the carpool details. The user should be presented with the create carpool screen with the fields populated with the carpool details if a carpool has already been created or left empty if not. The user should then be able to edit the carpool details or create a new one.
+1. Make MainActivity a one time post-install activty. When the user opens the app for the second time the MainActivity should be skipped to the LiftListActivity.
+2. In CreateLiftActivity, store the lift details entered by the user in SharedPreference. We need to mandate that you store the token details in your app in **codelearn_liftapp** SharedPreference with keys **key_pref_phone** for the phone number, **key_pref_location** for the location, **key_pref_stime** for the start time from home & **key_pref_etime** for the start time from office.
+3. Add a menu item to LiftListActivity which allows the user to edit/create the lift details. The user should be presented with the create lift screen with the fields populated with the lift details if a lift has already been created or left empty if not. The user should then be able to edit the lift details or create a new one.
 
 ##Restrictions
-1. The carpool data must be stored in a SharedPreference file named "codelearn_liftapp".
+1. The lift data must be stored in a SharedPreference file named "codelearn_liftapp".
 2. The start from home and start from office values retrieved from the TimePicker views must be stored in the format: **"HH:mm"**.
-3. The resource file for populating the menu in CarpoolListActivity should be named **carpool_list.xml**.
+3. The resource file for populating the menu in LiftListActivity should be named **lift_list.xml**.
