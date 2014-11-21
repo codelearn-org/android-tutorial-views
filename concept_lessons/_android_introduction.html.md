@@ -30,7 +30,7 @@ This is usually referred to as the launcher Activity or the main Activity too.
 
 * Every Activity has its own lifecycle. You can read more about it in the <%= link_to "Activity Concept Lesson", android_concept_lesson_path("android-activity")  %> . 
 
-* Every Android app has a Manifest.xml where all Activites are defined and one Activity is marked as Main Activity. One of the most common error developers commit when they start with Android development is forgetting to add a new Activity in Mainfest.xml file.
+* Every Android app has a Manifest.xml where all Activites are defined and one Activity is marked as Main Activity. One of the most common error developers commit when they start with Android development is forgetting to add a new Activity in Manifest.xml file.
 
 As a developer, Activity is a Java class file where you write the logic. Activity does not include the UI. Rather, one of the things you need to write in your Activity logic is - which UI to show. <br/>
 <div class="ac">
