@@ -4,7 +4,7 @@ Android has come a long since its inception in 2009 - A lot of things have chang
 
 Though a lot has changed since the launch of Android, the basic building blocks of Android app have remained the same. Let's look at some of the basic building blocks of an Android app in detail. Later, we will see how all these components come together to create an app, using the example of a Twitter application.
 
-An Android Application is coded in Java and compiled into a single distribution package called as APK. APK is the executable file which is installed on your phone as Android app.  Let's walk through the various building blocks of the an Android application.
+An Android Application is coded in Java and compiled into a single distribution package called as APK. APK is the executable file which is installed on your phone as Android app.  Let's walk through the various building blocks of an Android application.
 
 <br/>
 <%= image_tag "android-introduction/picture-1.png", alt: "Building Blocks of Android", title: "Building Blocks of Android" %>
