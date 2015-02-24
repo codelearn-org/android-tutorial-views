@@ -34,7 +34,7 @@ This is usually referred to as the launcher Activity or the main Activity too.
 
 As a developer, Activity is a Java class file where you write the logic. Activity does not include the UI. Rather, one of the things you need to write in your Activity logic is - which UI to show. <br/>
 <div class="ac">
- <%= link_to "Go to hands on tutorial on Acitivity", app_tutorial_module_with_token_path("twitter", LessonModule.find_by_lesson_number(4).lesson.token), class: "btn btn-success btn-large" %>
+ <%= link_to "Go to hands on tutorial on Activity", app_tutorial_module_with_token_path("twitter", LessonModule.find_by_lesson_number(4).lesson.token), class: "btn btn-success btn-large" %>
 </div>
 
 ## User Interface / Views
