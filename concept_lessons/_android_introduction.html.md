@@ -23,7 +23,7 @@ Let's go 1 by 1 into each of these components and get more details about them.
 This is the first Android component you will encounter as soon as you open an Android app. An Android app should have at least one Activity in it.
 
 * So what exactly is Activity ? Every screen in an Android app is an Activity.
-Activity will always have a User Interface (abbreviated as UI). It is not possible to have an Activity without a UI.
+Activity will always have a User Interface (abbreviated as UI). It is not possible to have an Activity without an UI.
 
 * Any Android app has one or more Activities. Out of these, one Activity will act as the entry point. The Activity will show up when the app starts.
 This is usually referred to as the launcher Activity or the main Activity too. 
